@@ -10,6 +10,7 @@ int main()
         cin >> x >> y >> n;
         long long ans = 0;
         ans = n - n % x + y;
+        cout << "test" << n - n % x + y;
         if (ans <= n)
         {
             cout << ans << endl;

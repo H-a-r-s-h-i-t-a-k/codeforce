@@ -3,6 +3,8 @@
     "iostream": "cpp",
     "limits": "cpp",
     "utility": "cpp",
-    "xutility": "cpp"
+    "xutility": "cpp",
+    "cstdlib": "cpp",
+    "ostream": "cpp"
   }
 }

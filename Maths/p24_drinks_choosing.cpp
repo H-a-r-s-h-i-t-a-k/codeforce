@@ -14,6 +14,7 @@ int main()
         drink[temp]++;
     }
     int take = n / 2 + (n & 1);
+    cout << (n & 1);
     int cnt = 0;
     for (int i = 1; i <= k; i++)
     {

@@ -5,6 +5,7 @@
     "utility": "cpp",
     "xutility": "cpp",
     "cstdlib": "cpp",
-    "ostream": "cpp"
+    "ostream": "cpp",
+    "ratio": "cpp"
   }
 }

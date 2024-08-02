@@ -8,5 +8,8 @@ int main()
     {
         total_R += (i * k);
     }
-    cout << abs(total_R - n) << endl;
+    if (n >= total_R)
+        cout << 0 << endl;
+    else
+        cout << total_R - n << endl;
 }

@@ -9,55 +9,32 @@ int main()
     {
         cin >> n;
         cin >> ans;
-
-        int j = n, len = n * 4, mx = 0;
-        if (n == 1)
+        int n_ans = n * 4, a = 0, b = 0, c = 0, d = 0;
+        int result = 0;
+        for (int i = 0; i < n_ans; i++)
         {
-            int corr = 65;
-            for (int i = 0; i < 4; i++)
+            if (ans[i] == 'A')
             {
-                if (int(ans[i]) == corr)
-                    mx++;
-                corr++;
+                a++;
             }
-        }
-        else
-        {
-
-            int corr = 65;
-            char c;
-            for (int i = 0; i < len; i++)
+            else if (ans[i] == 'B')
             {
-
-                c = ans[i];
-                if (corr > 68)
-                {
-                    corr = 65;
-                    j = n;
-                }
-                if (int(c) == corr)
-                {
-
-                    mx++;
-                }
-                else if (int(c) == 63)
-                    mx = mx;
-
-                if (j > 0)
-                {
-
-                    j--;
-                }
-                if (j == 0)
-                {
-
-                    corr++;
-                    j = n;
-                }
+                b++;
             }
+            else if (ans[i] == 'C')
+            {
+                c++;
+            }
+            else if (ans[i] == 'D')
+            {
+                d++;
+            }
+            else
+                continue;
         }
 
-        cout << mx << endl;
+        result = min(a, n) + min(b, n) + min(c, n) + min(d, n);
+        cout << result << endl;
     }
     return 0;
 }

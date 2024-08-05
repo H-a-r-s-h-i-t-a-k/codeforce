@@ -6,6 +6,9 @@
     "xutility": "cpp",
     "cstdlib": "cpp",
     "ostream": "cpp",
-    "ratio": "cpp"
+    "ratio": "cpp",
+    "xstring": "cpp",
+    "iterator": "cpp",
+    "xmemory": "cpp"
   }
 }

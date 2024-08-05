@@ -1,26 +1,44 @@
 #include <bits/stdc++.h>
 using namespace std;
+typedef long long ll;
 int main()
 {
-    int k, num;
+    ll k, l = -1, r = -1;
+    string num;
 
-    bool flag = false;
     cin >> k;
     while (k--)
     {
-        int count = 0;
+        l = -1, r = -1;
         cin >> num;
-        while (num != 0)
+
+        for (ll i = 0; i < num.size(); i++)
         {
-            int digit = num % 10;
-            if (digit == 1)
-                flag = true;
-            if (flag)
+            if (num[i] == '1')
             {
-                if (digit == 0)
-                    count++;
-                        }
-            num /= 10;
+                l = i;
+                break;
+            }
+        }
+
+        for (ll i = num.size() - 1; i >= 0; i--)
+        {
+            if (num[i] == '1')
+            {
+                r = i;
+                break;
+            }
+        }
+        if (l == -1 && r == -1)
+        {
+            cout << 0 << endl;
+            continue;
+        }
+        ll count = 0;
+        for (ll i = l; i <= r; i++)
+        {
+            if (num[i] == '0')
+                count++;
         }
         cout << count << endl;
     }

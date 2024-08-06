@@ -2,36 +2,33 @@
 using namespace std;
 typedef long long ll;
 
-string shoering(ll n, ll s, ll m, ll l[], ll r[])
+string showering(ll n, ll s, ll m, ll l[], ll r[])
 {
     ll space = 0;
     for (ll i = 0; i < n; i++)
     {
         if (l[i + 1] > r[i])
         {
-            if (i <= n - 1)
+            if (i != n - 1)
+
                 if ((l[i + 1] - r[i]) >= s)
                 {
-                    cout << l[i + 1] << " " << r[i];
+
                     return "YES";
                 }
         }
         else
         {
-            cout << "no" << endl;
-            break;
+            return "NO";
         }
     }
 
     if ((m - r[n - 1]) >= s)
     {
-        cout << "Yes" << endl;
+        return "yes";
     }
-    if (space)
 
-        cout << "YES" << endl;
-    else
-        cout << "NO" << endl;
+    return "NO";
 }
 int main()
 {
@@ -51,10 +48,10 @@ int main()
         }
         if (space)
         {
-            cout << "yEes" << endl;
+            cout << "yes" << endl;
             continue;
         }
-        cout << showing(n, s, m, l, r) << endl;
+        cout << showering(n, s, m, l, r) << endl;
     }
 
     return 0;

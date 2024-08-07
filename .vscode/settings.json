@@ -9,6 +9,7 @@
     "ratio": "cpp",
     "xstring": "cpp",
     "iterator": "cpp",
-    "xmemory": "cpp"
+    "xmemory": "cpp",
+    "format": "cpp"
   }
 }

@@ -28,7 +28,7 @@ int main()
     cin >> n;
 
     sort(lucky.begin(), lucky.end());
-    cout << lucky[lower_bound(lucky.begin(), lucky.end(), n) - lucky.begin()] << endl;
+    cout << lucky[lower_bound(lucky.begin(), lucky.end(), n) - lucky.begin()] << "\n";
 
     return 0;
 }

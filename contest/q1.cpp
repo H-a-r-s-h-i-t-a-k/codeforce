@@ -1,26 +1,29 @@
 #include <iostream>
 using namespace std;
 typedef long long ll;
+
+void solve()
+{
+    ll n;
+    cin >> n;
+    string s;
+    cin >> s;
+    if (s[0] == s[n - 1])
+        cout << "No" << endl;
+    else
+        cout << "Yes" << endl;
+}
 int main()
 {
-    ll t, n;
+#ifndef ONLINE_JUDGE
+    freopen("Error.txt", "w", stderr);
+#endif
+
+    ll t = 1;
     cin >> t;
     while (t--)
     {
-        cin >> n;
-        string str;
-        cin >> str;
-        if (n < 2)
-        {
-            cout << "No" << endl;
-            continue;
-        }
-        if (str[0] == str[n - 1])
-        {
-            cout << "no" << endl;
-            continue;
-        }
-        cout << "yes" << endl;
+        solve();
     }
 
     return 0;

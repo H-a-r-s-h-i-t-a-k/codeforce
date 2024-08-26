@@ -1,41 +1,33 @@
 #include <iostream>
 #include <vector>
+#include <algorithm>
 using namespace std;
 typedef long long ll;
+ll ans()
+{
+    ll n;
+    cin >> n;
+
+    vector<ll> vec(n);
+    for (auto &it : vec)
+        cin >> it;
+
+    // sort
+    sort(vec.begin(), vec.end());
+
+    return vec[n / 2];
+}
 int main()
 {
+#ifndef ONLINE_JUDGE
+    freopen("Error.txt", "w", stderr);
+#endif
 
     ll t, n;
     cin >> t;
     while (t--)
     {
-        cin >> n;
-
-        vector<ll> a(n);
-        for (int i = 0; i < n; i++)
-        {
-            cin >> a[i];
-        }
-        ll i = 1, ans = a[0];
-        bool turtle = true, piggy = false;
-        while (i < n)
-        {
-
-            if (turtle)
-            {
-                ans = max(ans, a[i]);
-                piggy = true;
-                i++;
-            }
-
-            if (piggy)
-            {
-                ans = min(ans, a[i]);
-                turtle = true;
-                i++;
-            }
-        }
-        cout << ans << endl;
+        cout << ans() << endl;
     }
     return 0;
 }

@@ -12,6 +12,8 @@
     "xmemory": "cpp",
     "format": "cpp",
     "compare": "cpp",
-    "type_traits": "cpp"
-  }
+    "type_traits": "cpp",
+    "map": "cpp"
+  },
+  "C_Cpp.errorSquiggles": "disabled"
 }

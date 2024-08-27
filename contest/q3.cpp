@@ -52,7 +52,7 @@ int main()
     cin >> t;
     while (t--)
     {
-        cout << solve() << endl;
+        cout << solve();
     }
 
     return 0;

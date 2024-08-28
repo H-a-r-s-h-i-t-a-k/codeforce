@@ -7,18 +7,21 @@ int main()
 
     int n;
     cin >> n;
-    if (n <= 2)
+    bool flag = false;
+    string s = "";
+    if (i >= 1)
+        cin >> s[0];
+    for (int i = 1; i < n; i++)
     {
-        cout << "No" << endl;
-        return 0;
+        cin >> s[i];
+        if (s[i] != s[i - 1])
+            flag = true;
     }
 
-    cout << "Yes" << endl;
-    cout << n - 1;
-    for (int i = 1; i <= n - 1; i++)
-        cout << " " << i;
-    cout << endl;
-    cout << 1 << " " << n << endl;
+    if (flag)
+        {
+            
+        }
 
-    return 0;
+            return 0;
 }

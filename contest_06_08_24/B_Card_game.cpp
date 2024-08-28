@@ -1,46 +1,32 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
 using namespace std;
+typedef long long ll;
+void asquare()
+{
+    ll n;
+    cin >> n;
+    vector<ll> v(n);
+    cin >> v;
+    if (n > 2)
+    {
+        cout << n << endl;
+    }
+    else
+    {
+        if (abs(v[0] - v[1]) == 1)
+            pn else py
+    }
+}
+// Main
 int main()
 {
-    int k;
-    cin >> k;
-    while (k--)
+
+    ll t;
+    cin >> t;
+    fl(i, t)
     {
-        int a1, a2, b1, b2, won = 0;
-        cin >> a1 >> a2 >> b1 >> b2;
-        int round = 0; // I st time
-        if (a1 > b1)
-            round++;
-        if (a2 > b2)
-            round++;
-        if (round == 2)
-            won++;
-
-        round = 0; // II second time
-        if (a1 > b2)
-            round++;
-        if (a2 > b1)
-            round++;
-        if (round == 2)
-            won++;
-
-        round = 0; // III time
-        if (a2 > b2)
-            round++;
-        if (a1 > b1)
-            round++;
-        if (round == 2)
-            won++;
-
-        round = 0; // IV time
-        if (a2 > b1)
-            round++;
-        if (a1 > b2)
-            round++;
-        if (round == 2)
-            won++;
-        // last
-        cout << won << endl;
+        asquare();
     }
     return 0;
 }

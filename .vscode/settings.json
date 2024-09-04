@@ -13,7 +13,8 @@
     "format": "cpp",
     "compare": "cpp",
     "type_traits": "cpp",
-    "map": "cpp"
+    "map": "cpp",
+    "vector": "cpp"
   },
   "C_Cpp.errorSquiggles": "disabled"
 }

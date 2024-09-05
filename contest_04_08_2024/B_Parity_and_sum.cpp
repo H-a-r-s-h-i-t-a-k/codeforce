@@ -52,7 +52,7 @@ int main()
             }
         }
 
-        cout << operation << endl;
+        cout << operation << "\n";
     }
     return 0;
 }

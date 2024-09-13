@@ -31,7 +31,7 @@ int main()
         if (r1 == r2)
             cout << r2 << endl;
         else
-            cout << "-1     " << endl;
+            cout << "-1" << endl;
     }
 
     return 0;
